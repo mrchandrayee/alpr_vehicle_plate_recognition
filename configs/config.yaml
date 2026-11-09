@@ -1,0 +1,20 @@
+app:
+  title: "ALPR - Automatic License Plate Recognition"
+  max_upload_mb: 500
+detection:
+  model: "yolo11n.pt"
+  confidence: 0.30
+  vehicle_classes: [2, 3, 5, 7] # car, motorcycle, bus, truck (COCO)
+  plate_min_width: 45
+  plate_min_height: 14
+ocr:
+  languages: ["en"]
+  gpu: false
+  min_confidence: 0.20
+  allowlist: "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789- "
+video:
+  fallback_fps: 25
+  process_every_n_frames: 1
+tracking:
+  max_centroid_distance: 100
+  max_disappeared: 25

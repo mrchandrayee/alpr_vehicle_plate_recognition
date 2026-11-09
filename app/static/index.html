@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ALPR</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><main><header><span>COMPUTER VISION / VIDEO ANALYTICS</span><h1>ALPR</h1><p>Automatic License Plate Recognition</p></header>
+<section class="panel"><h2>Process an authorized video</h2><p>Upload a traffic clip to detect vehicles, propose plate regions, read visible plate text and generate a local event report.</p>
+<form id="form"><input type="file" name="video" accept="video/*" required><button>Analyze video</button></form><p id="status"></p><div id="result"></div></section>
+<section class="panel"><h2>Pipeline</h2><div class="steps"><span>Vehicle detection</span><span>Plate proposals</span><span>OCR</span><span>Track IDs</span><span>CSV + MP4</span></div></section>
+<footer>Local prototype. Plate OCR can be wrong; verify manually. Process only footage you are legally authorized to use.</footer></main><script src="/static/app.js"></script></body></html>
